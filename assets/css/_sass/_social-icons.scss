@@ -77,3 +77,8 @@ $rss-color: #ff6600;
   padding: 5px;
   @include social-media-icon($rss-color, $icon-transition-time);
 }
+
+.ai-google-scholar {
+  padding: 5px;
+  @include social-media-icon($google-scholar-color, $icon-transition-time);
+}
