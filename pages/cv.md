@@ -58,13 +58,11 @@ Galimba, K. D., **Martínez-Gómez, J.**, & Di Stilio, V. S. (2018). Gene Duplic
 
 ## Awards/Skills
 ### *Awards*
-* Society for Developmental Biology 75th Annual Meeting \*Second Place in Undergrad Poster Presentations  
+* Society for Developmental Biology 75th Annual Meeting Second Place in Undergrad Poster Presentations  
 * [University of Washington Cultivating Discovery Undergraduate Research Video](https://www.youtube.com/watch?v=eRAfphm7Eac)   
 * University of Washington Ronald E. McNair Research Fellow  
-* LSAMP Annual Conference *Best Poster Presentation 2014  
-
+* LSAMP Annual Conference *Best Poster Presentation 2014 
 ### *Skills*
-* Can make a mean Peanut Butter Banana Sandwich
 * Knows how to use both a Manuel and electronic Pallet Jack
 * Welded together a Large Metal Caterpiller Check it out below!
 
