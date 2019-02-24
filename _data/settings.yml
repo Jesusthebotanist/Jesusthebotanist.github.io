@@ -10,7 +10,7 @@ menu:
 - {name: 'Projects', folder: 'pages', file: 'Projects.html'}
 - {name: 'CV', folder: 'pages', file: 'cv.html'}
 #- {name: 'Rambles', folder: 'pages', file: 'Rambles.html'}
-- {name: 'Other Cool Scientists', folder: 'pages', file: 'friends.html'}
+#- {name: 'Other Cool Scientists', folder: 'pages', file: 'friends.html'}
 #- {name: 'Learning Resources', folder: 'pages', file: 'resources.html'}
 #- {name: 'Contact', folder: 'pages', file: 'contact.html'}
 
