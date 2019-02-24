@@ -2,7 +2,7 @@
 layout: cv2
 title: Education
 ---
-# Jesús Martínez-Gómez
+#
 ## Education
 **Cornell Universisty**  
 Ph.D Candidate, Plant Biology Section, 2021 (Expected)  
@@ -68,5 +68,5 @@ Galimba, K. D., **Martínez-Gómez, J.**, & Di Stilio, V. S. (2018). Gene Duplic
 * Welded together a Large Metal Caterpiller Check it out below!
 
 
-!["His Name was Edwig"](/assets/img/Caterpiller1.jpg)
+!["His Name was Edwig"](assets/img/Caterpiller1.jpg)
 ![alt text](/assets/img/Caterpiller2.jpg "Team Work Makes the Dream Work!!!")
