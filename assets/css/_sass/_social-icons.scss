@@ -80,5 +80,5 @@ $rss-color: #ff6600;
 
 .fa-google-scholar {
   padding: 5px;
-  @include social-media-icon($google-scholar-color, $icon-transition-time);
+  @include social-media-icon($google-color, $icon-transition-time);
 }

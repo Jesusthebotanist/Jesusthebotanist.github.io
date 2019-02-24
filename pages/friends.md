@@ -3,7 +3,7 @@ layout: misc
 title: Other Cool Scientists
 ---
 
-One of the best part (if not *the* best)  of science, is meeting really cool, passionate people, hyped about their work. These are a few s/o to  awesome people I’ve had the pleasure of meeting! So far the list is restricted those who study evolutionary botany, but I will expand it soon, check out their cool websites! 
+One of the best part of science, is meeting and collaberating with passionate individuals. These are a few awesome people I’ve had the pleasure of meeting! 
 
 <p align="center">
   The Fantastical Fern Fernologist Michael Song
