@@ -1,0 +1,36 @@
+# Change to true for Disqus comments
+disqus:
+  comments: false
+  disqus_shortname: 'millennial-3'
+
+google-ID: 'UA-112533483-1'
+
+menu:
+- {name: 'About', folder: 'pages', file: 'about.html'}
+- {name: 'Projects', folder: 'pages', file: 'Projects.html'}
+- {name: 'CV', folder: 'pages', file: 'cv.html'}
+- {name: 'Rambles', folder: 'pages', file: 'Rambles.html'}
+- {name: 'Other Cool Scientists', folder: 'pages', file: 'friends.html'}
+#- {name: 'Learning Resources', folder: 'pages', file: 'resources.html'}
+#- {name: 'Contact', folder: 'pages', file: 'contact.html'}
+
+# Available social icons are powered by Font Awesome, so you can use any icon that they offer
+social:
+- {icon: 'twitter', link: 'https://twitter.com/WhimsicalAllium'}
+- {icon: 'github', link: 'https://github.com/Jesusthebotanist'}
+- {icon: 'linkedin', link: 'https://www.linkedin.com/in/jesus-martinez-gomez-47379875/'}
+- {icon: 'envelope', link: 'mailto:jmartinezg@berkeley.edu'}
+#- {icon: 'facebook', link: 'https://www.facebook.com/Le.Paul.94'}
+#- {icon: 'rss-square', link: 'feed.xml'}
+# - {icon: 'rss-square', link: 'rss-feed.xml'}
+
+# Customize site text
+pagination:
+  next_page: 'Newer'
+  previous_page: 'Older'
+
+sharing_button_prompt: 'Feel free to share!'
+
+related_posts: 'You may also enjoy...'
+
+post_date_prefix: 'Written on'
