@@ -68,5 +68,5 @@ Galimba, K. D., **Martínez-Gómez, J.**, & Di Stilio, V. S. (2018). Gene Duplic
 * Welded together a Large Metal Caterpiller Check it out below!
 
 
-![alt text](/assets/img/Caterpiller1.jpg "His Name was Edwig")
+!["His Name was Edwig"](/assets/img/Caterpiller1.jpg)
 ![alt text](/assets/img/Caterpiller2.jpg "Team Work Makes the Dream Work!!!")
