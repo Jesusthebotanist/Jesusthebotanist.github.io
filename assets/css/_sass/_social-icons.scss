@@ -2,7 +2,7 @@ $icon-transition-time: 1.0s;
 $envelope-color: #f39c12;
 $twitter-color: #00aced;
 $instagram-color: #375989;
-$google-scholar-color: #4788ee;
+$google-color: #4788ee;
 $github-color: #343434;
 $linkedin-color: #0073a4;
 $facebook-color: #3d5b99;
@@ -78,7 +78,7 @@ $rss-color: #ff6600;
   @include social-media-icon($rss-color, $icon-transition-time);
 }
 
-.fa-google-scholar {
+.fa-google {
   padding: 5px;
   @include social-media-icon($google-color, $icon-transition-time);
 }
