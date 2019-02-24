@@ -18,7 +18,7 @@ menu:
 social:
 - {icon: 'twitter', link: 'https://twitter.com/WhimsicalAllium'}
 - {icon: 'github', link: 'https://github.com/Jesusthebotanist'}
-- {icon: 'google', link: 'https://scholar.google.com/citations?user=XCiRpg8AAAAJ&hl=en'}
+- {icon: 'google-scholar', link: 'https://scholar.google.com/citations?user=XCiRpg8AAAAJ&hl=en'}
 - {icon: 'linkedin', link: 'https://www.linkedin.com/in/jesús-martínez-gómez-47379875'}
 - {icon: 'envelope', link: 'mailto:jm2722@cornell.edu'}
 #- {icon: 'facebook', link: 'https://www.facebook.com/Le.Paul.94'}
