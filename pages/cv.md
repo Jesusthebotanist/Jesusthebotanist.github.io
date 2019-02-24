@@ -2,7 +2,8 @@
 layout: cv2
 title: Education
 ---
-#
+
+
 ## Education
 **Cornell Universisty**  
 Ph.D Candidate, Plant Biology Section, 2021 (Expected)  
@@ -67,6 +68,9 @@ Galimba, K. D., **Martínez-Gómez, J.**, & Di Stilio, V. S. (2018). Gene Duplic
 * Knows how to use both a Manuel and electronic Pallet Jack
 * Welded together a Large Metal Caterpiller Check it out below!
 
+<p align="center">
+  <img src="assets/img/Caterpiller1.jpg" width="350" title="His Name was Edwig">
+  <img src="/assets/img/Caterpiller2.jpg" width="350" alt="accessibility text">
+</p>
 
-!["His Name was Edwig"](assets/img/Caterpiller1.jpg)
-![alt text](/assets/img/Caterpiller2.jpg "Team Work Makes the Dream Work!!!")
+
