@@ -25,11 +25,12 @@ Envrionmental impact on stem cells during C. elgans germline development
 Advisor: [Jane Hubbard](http://jhubbardlab.med.nyu.edu/)
 
 ## Publications
+**Martínez-Gómez, J.**, Sullivan,M. A., Galimba, D. K., Coté Y. E., Di Stilio, V. S., Natural homeotic mutants and genetic control of floral organ identity in a ranunculid. *In prep*
+
+Wang, T. N., Clifford, M. R., **Martínez-Gómez, J.**, Johnson, J. C., Riffell, J. A., & Di Stilio, V. S. (2018). Scent matters: differential contribution of scent to insect response in flowers with insect vs. wind pollination traits. Annals of botany 123.2 (2018): 289-301.
+
 Galimba, K. D., **Martínez-Gómez, J.**, & Di Stilio, V. S. (2018). Gene Duplication and Transference of Function in the paleoAP3 Lineage of Floral Organ Identity Genes. Frontiers in Plant Science, 9, 334.
 
-Wang, T. N., Clifford, M. R., **Martínez-Gómez, J.**, Johnson, J. C., Riffell, J. A., & Di Stilio, V. S. (2018). Scent matters: differential contribution of scent to insect response in flowers with insect vs. wind pollination traits. Annals of botany.
-
-Sullivan,M. A., Schulfer, F. A., Galimba, D. K., Snelson, S., **Martínez-Gómez, J.**, Di Stilio, V. S., Natural homeotic mutants reveal genetic control of floral organ identity in a ranunculid. *In prep*
 
 ## Funding
 * American Society of Plant Taxonomy Graduate Student Research Grant
@@ -50,14 +51,14 @@ Sullivan,M. A., Schulfer, F. A., Galimba, D. K., Snelson, S., **Martínez-Gómez
 ### *Mentorship*
 * Summer Counselor for ALVA GenOM 2016   
 * Undergraduate Research Leader   
-* Laboratory Mentor for Summer Student: Mary Swadener   	
+* Laboratory Mentor for Summer Student: Mary Swadener   
 * Leader Del Futuro Mentor  
 * University of Washington Mentor Power to Success Program  
 * University of Washington ALVA GenOM Math and Chem Tutor   
 
 ## Awards/Skills
 ### *Awards*
-* Society for Developmental Biology 75th Annual Meeting *Second Place in Undergrad Poster Presentations  
+* Society for Developmental Biology 75th Annual Meeting \*Second Place in Undergrad Poster Presentations  
 * [University of Washington Cultivating Discovery Undergraduate Research Video](https://www.youtube.com/watch?v=eRAfphm7Eac)   
 * University of Washington Ronald E. McNair Research Fellow  
 * LSAMP Annual Conference *Best Poster Presentation 2014  
