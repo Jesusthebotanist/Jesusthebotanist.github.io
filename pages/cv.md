@@ -8,5 +8,5 @@ title: Education
         <p> Sorry this browser does not support PDFs 😞. Download my CV Here: <a href="https://jesusthebotanist.github.io/assets/pdfs/CV_Jan2018.pdf">Download CV</a>.</p>
     </embed>
 </object>
-</a>
+
 
