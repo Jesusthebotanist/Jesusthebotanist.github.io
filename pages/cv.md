@@ -4,4 +4,5 @@ title: Education
 ---
 
 
-{{ site.baseurl }}/pdfs/CV_Jan2018.pdf
+{{ site.baseurl }}assets/pdfs/CV_Jan2018.pdf
+<embed src="assets/pdfs/CV_Jan2018.pdf" type="application/pdf" />
