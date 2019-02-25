@@ -6,4 +6,4 @@ categories: Rambles
 image: BB.jpg
 ---
 
-I'm learning how to websites. Its hosted on Github! Its neat!
+I'm learning how make my own website, it's hosted on Github! 
