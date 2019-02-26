@@ -7,11 +7,10 @@ google-ID: 'UA-112533483-1'
 
 menu:
 - {name: 'About', folder: 'pages', file: 'about.html'}
-- {name: 'Projects', folder: 'pages', file: 'Projects.html'}
+- {name: 'Research', folder: 'pages', file: 'Research.html'}
 - {name: 'CV', folder: 'pages', file: 'cv.html'}
 - {name: 'Blog', folder: 'pages', file: 'Rambles.html'}
 #- {name: 'Other Cool Scientists', folder: 'pages', file: 'friends.html'}
-#- {name: 'Learning Resources', folder: 'pages', file: 'resources.html'}
 #- {name: 'Contact', folder: 'pages', file: 'contact.html'}
 
 # Available social icons are powered by Font Awesome, so you can use any icon that they offer

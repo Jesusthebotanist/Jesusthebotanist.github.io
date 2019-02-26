@@ -7,13 +7,11 @@ image: Scent.png
 ---
 During my undergrad I had the fantastic oppertunity to help a fellow undergrad in the lab, Theresa Wang, with her thesis project. Her thesis was a collaberative project between Veronica Di Stilio and Jeff Riffel's lab to investigated the floral scent profiles between insect and wind pollinated species of *Thalictrum*. The paper was published last in [Annuals of Botany](https://academic.oup.com/aob/article/123/2/289/5056502) (Email me if you're stuck behind paywall). I joined the group while I was taking [BIOL 419: Data Science for Biologist](https://docs.wixstatic.com/ugd/b83b01_bb7ba7ff3216490eab0c86c628431108.pdf) my first every computing class; I need a project for the course and Theresa had some data just for that! The entire experiance really pushed me to learn skill that I am now utalizing in my Ph.D, as well as a nice change of pace from all the PCR I was running. 
 
-I performed non-multidimensional scaling (nMDS) and test for phylogenetic signal. Unfortently the nMDS analysis is written in Matlab while the rest is in R, because coding using Matlab before I switched to the free R. The following is a slight modificaiton from the published supplementary material found in this [github repo](https://github.com/Jesusthebotanist/Thalictrum-Floral-Scent) for the R portion of the analysis. The data is floral scent analyzed by gas chromatography-mass spectrometry from 11 species of Thalictrum and electroantennogram (EAG) responses from  buff-tailed bumblebee antenna exposed to floral scent extract from each *Thalictrum* species. This script does two things,
+I performed non-multidimensional scaling (nMDS) and test for phylogenetic signal. The nMDS analysis is written in Matlab while the rest is in R as I switched half way through (#free), perhaps I'll make a post about my Matlab code in the future. The following is a slight modificaiton from the published supplementary material found in this [github repo](https://github.com/Jesusthebotanist/Thalictrum-Floral-Scent) for the R portion of the analysis. The data is floral scent analyzed by gas chromatography-mass spectrometry from 11 species of Thalictrum and electroantennogram (EAG) responses from  buff-tailed bumblebee antenna exposed to floral scent extract from each *Thalictrum* species. This script does two things,
 
-1) Calculates Blomberg's K for the floral scent data to asses phylogenetic signal. 
+1) Calculates Blomberg's K each compound in floral scent data and for the entire dataset as a whole.  
 
-2) Performed an ancestral state reconstrion of bumble bee EAG response
-
-3) Generates Figure 4 from the manuscript
+2) Performed an ancestral state reconstrion of bumble bee EAG response/generates Figure 4 from the manuscript
 
 ```{r setup, include=FALSE}
 knitr::opts_knit$set(root.dir = '/Volumes/GoogleDrive/My Drive/Projects/Jesusthebotanist.github.io')
@@ -28,7 +26,6 @@ library(geiger)
 library(picante) 
 library(phylocurve)
 library(geomorph)
-library(diversitree)
 
 # Import Scent GCMS floral scent data
 scent <- read.csv("assets/code/scent/compounds.csv") 
@@ -55,10 +52,10 @@ plot(trimedTree)
 Extract scent emission data take the averge of biological replicates and wrangle the data into the proper formate for the downstream functons. 
 ```{r Scent Data Wrangle, results="hide"}
 #1) 
-scentCompounds <- scent[,9:63] # extract only scent data including mass*time column
-scentCompounds$Species_Name_Full <- scent$Species_Name_Full 
+scentCompounds <- scent[,9:63] # extract only scent data +  mass*time column
+scentCompounds$Species_Name_Full <- scent$Species_Name_Full # Add species names back in
 
-#2)  Average Scent Data across 
+#2)  Average Scent Data Accross Biological Replicates
 avgScentCompounds <- aggregate( scentCompounds, 
                                 by=list(scentCompounds$Species_Name_Full),
                                 FUN = mean,
@@ -68,10 +65,10 @@ avgScentCompounds$Species_Name_Full <- NULL
 row.names(avgScentCompounds) <- avgScentCompounds$Group.1
 avgScentCompounds$Group.1 <- NULL
 avgScentCompounds <- as.matrix(avgScentCompounds)
-head(avgScentCompounds)
+avgScentCompounds[,1:5] 
 ```
 
-The multiPhylosignal from picant test data runs 
+multiphylosignal() calculates Blombergs K for each individual trait in the dataset. 
 ```{r BlombergsK Individual, results="hide"}
 # Picante
 x <- multiPhylosignal(avgScentCompounds, tree)
