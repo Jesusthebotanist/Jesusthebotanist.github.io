@@ -1,0 +1,207 @@
+#NEXUS
+[written Tue Oct 24 13:33:21 PDT 2017 by Mesquite  version 3.03 (build 702) at cinnamon/206.87.114.151]
+
+BEGIN TAXA;
+	TITLE Taxa;
+	DIMENSIONS NTAX=86;
+	TAXLABELS
+		Aquilegia_oxysepala Enemion_raddeanum Isopyrum_manshuricum Leptopyrum_fumarioides Paraquilegia_microphylla Semiaquilegia_adoxoides Thalictrum_acutifolium Thalictrum_arkansanum Thalictrum_calabricum Thalictrum_calcicola Thalictrum_chelidonii Thalictrum_cirrhosum Thalictrum_confine Thalictrum_coreanum Thalictrum_coriaceum Thalictrum_actaeifolium Thalictrum_alpinum Thalictrum_aquilegifolium Thalictrum_arsenii Thalictrum_atriplex Thalictrum_baicalense Thalictrum_clavatum Thalictrum_cultratum Thalictrum_dasycarpum Thalictrum_delavayi Thalictrum_dioicum Thalictrum_fendleri Thalictrum_finetii Thalictrum_flavum Thalictrum_foetidum Thalictrum_grandiflorum Thalictrum_guatemalense Thalictrum_hernandezii Thalictrum_ichangense Thalictrum_isopyroides Thalictrum_lecoyeri Thalictrum_lucidum Thalictrum_macrocarpum Thalictrum_occidentale Thalictrum_omeiense Thalictrum_petaloideum Thalictrum_pinnatum Thalictrum_polycarpum Thalictrum_przewalskii Thalictrum_pubescens Thalictrum_punctatum Thalictrum_revolutum Thalictrum_rhynchocarpum Thalictrum_rochebruneanum Thalictrum_rubescens Thalictrum_rutifolium Thalictrum_smithii Thalictrum_simplex Thalictrum_sparsiflorum Thalictrum_squamiferum Thalictrum_squarrosum Thalictrum_strigillosum Thalictrum_tenue Thalictrum_uncinulatum Thalictrum_virgatum Thalictrum_thalictroides Thalictrum_elegans Thalictrum_fargesii Thalictrum_filamentosum Thalictrum_foeniculaceum Thalictrum_foliolosum Thalictrum_galeottii Thalictrum_gibbosum Thalictrum_grandisepalum Thalictrum_lankesteri Thalictrum_myriophyllum Thalictrum_peltatum Thalictrum_pringlei Thalictrum_pubigerum Thalictrum_rostellatum Thalictrum_rotundifolium Thalictrum_sachalinense Thalictrum_saniculiforme Thalictrum_steyermarkii Thalictrum_texanum Thalictrum_trichopus Thalictrum_tuberiferum Thalictrum_tuberosum Thalictrum_uchiyamae Thalictrum_uncatum Thalictrum_venulosum 
+	;
+
+END;
+
+
+BEGIN CHARACTERS;
+	TITLE  Character_Matrix;
+	DIMENSIONS  NCHAR=1;
+	FORMAT DATATYPE = STANDARD GAP = - MISSING = ? SYMBOLS = "  0 1";
+	CHARSTATELABELS 
+		1 'Pollination_strategy (0 = wind, 1 = insect)' ; 
+	MATRIX
+	Aquilegia_oxysepala         1
+	Enemion_raddeanum           1
+	Isopyrum_manshuricum        1
+	Leptopyrum_fumarioides      1
+	Paraquilegia_microphylla    1
+	Semiaquilegia_adoxoides     1
+	Thalictrum_acutifolium      1
+	Thalictrum_arkansanum       0
+	Thalictrum_calabricum       1
+	Thalictrum_calcicola        ?
+	Thalictrum_chelidonii       1
+	Thalictrum_cirrhosum        ?
+	Thalictrum_confine          0
+	Thalictrum_coreanum         1
+	Thalictrum_coriaceum        0
+	Thalictrum_actaeifolium     0
+	Thalictrum_alpinum          0
+	Thalictrum_aquilegifolium  1
+	Thalictrum_arsenii          0
+	Thalictrum_atriplex         1
+	Thalictrum_baicalense       1
+	Thalictrum_clavatum         1
+	Thalictrum_cultratum        0
+	Thalictrum_dasycarpum       0
+	Thalictrum_delavayi         1
+	Thalictrum_dioicum          0
+	Thalictrum_fendleri         0
+	Thalictrum_finetii          1
+	Thalictrum_flavum           1
+	Thalictrum_foetidum         0
+	Thalictrum_grandiflorum     0
+	Thalictrum_guatemalense     0
+	Thalictrum_hernandezii      0
+	Thalictrum_ichangense       1
+	Thalictrum_isopyroides      ?
+	Thalictrum_lecoyeri         ?
+	Thalictrum_lucidum          1
+	Thalictrum_macrocarpum      0
+	Thalictrum_occidentale      0
+	Thalictrum_omeiense         1
+	Thalictrum_petaloideum      1
+	Thalictrum_pinnatum         0
+	Thalictrum_polycarpum       0
+	Thalictrum_przewalskii      1
+	Thalictrum_pubescens        0
+	Thalictrum_punctatum        ?
+	Thalictrum_revolutum        0
+	Thalictrum_rhynchocarpum    ?
+	Thalictrum_rochebruneanum   1
+	Thalictrum_rubescens        1
+	Thalictrum_rutifolium       1
+	Thalictrum_smithii          1
+	Thalictrum_simplex          0
+	Thalictrum_sparsiflorum     1
+	Thalictrum_squamiferum      1
+	Thalictrum_squarrosum       ?
+	Thalictrum_strigillosum     0
+	Thalictrum_tenue            0
+	Thalictrum_uncinulatum      ?
+	Thalictrum_virgatum         1
+	Thalictrum_thalictroides    1
+	Thalictrum_elegans          0
+	Thalictrum_fargesii         ?
+	Thalictrum_filamentosum     1
+	Thalictrum_foeniculaceum    1
+	Thalictrum_foliolosum       0
+	Thalictrum_galeottii        0
+	Thalictrum_gibbosum         0
+	Thalictrum_grandisepalum    0
+	Thalictrum_lankesteri       0
+	Thalictrum_myriophyllum     ?
+	Thalictrum_peltatum         0
+	Thalictrum_pringlei         0
+	Thalictrum_pubigerum        0
+	Thalictrum_rostellatum      1
+	Thalictrum_rotundifolium    ?
+	Thalictrum_sachalinense     1
+	Thalictrum_saniculiforme    1
+	Thalictrum_steyermarkii     0
+	Thalictrum_texanum          0
+	Thalictrum_trichopus        ?
+	Thalictrum_tuberiferum      1
+	Thalictrum_tuberosum        1
+	Thalictrum_uchiyamae        1
+	Thalictrum_uncatum          0
+	Thalictrum_venulosum        0
+
+;
+
+END;
+BEGIN TREES;
+	Title 'Trees from "THALICTRUM86.con.tre"';
+	LINK Taxa = Taxa;
+	TRANSLATE
+[0] 		1 Aquilegia_oxysepala,
+[1] 		2 Enemion_raddeanum,
+[2] 		3 Isopyrum_manshuricum,
+[3] 		4 Leptopyrum_fumarioides,
+[4] 		5 Paraquilegia_microphylla,
+[5] 		6 Semiaquilegia_adoxoides,
+[6] 		7 Thalictrum_acutifolium,
+[7] 		8 Thalictrum_arkansanum,
+[8] 		9 Thalictrum_calabricum,
+[9] 		10 Thalictrum_calcicola,
+[10] 		11 Thalictrum_chelidonii,
+[11] 		12 Thalictrum_cirrhosum,
+[12] 		13 Thalictrum_confine,
+[13] 		14 Thalictrum_coreanum,
+[14] 		15 Thalictrum_coriaceum,
+[15] 		16 Thalictrum_actaeifolium,
+[16] 		17 Thalictrum_alpinum,
+[17] 		18 Thalictrum_aquilegifolium,
+[18] 		19 Thalictrum_arsenii,
+[19] 		20 Thalictrum_atriplex,
+[20] 		21 Thalictrum_baicalense,
+[21] 		22 Thalictrum_clavatum,
+[22] 		23 Thalictrum_cultratum,
+[23] 		24 Thalictrum_dasycarpum,
+[24] 		25 Thalictrum_delavayi,
+[25] 		26 Thalictrum_dioicum,
+[26] 		27 Thalictrum_fendleri,
+[27] 		28 Thalictrum_finetii,
+[28] 		29 Thalictrum_flavum,
+[29] 		30 Thalictrum_foetidum,
+[30] 		31 Thalictrum_grandiflorum,
+[31] 		32 Thalictrum_guatemalense,
+[32] 		33 Thalictrum_hernandezii,
+[33] 		34 Thalictrum_ichangense,
+[34] 		35 Thalictrum_isopyroides,
+[35] 		36 Thalictrum_lecoyeri,
+[36] 		37 Thalictrum_lucidum,
+[37] 		38 Thalictrum_macrocarpum,
+[38] 		39 Thalictrum_occidentale,
+[39] 		40 Thalictrum_omeiense,
+[40] 		41 Thalictrum_petaloideum,
+[41] 		42 Thalictrum_pinnatum,
+[42] 		43 Thalictrum_polycarpum,
+[43] 		44 Thalictrum_przewalskii,
+[44] 		45 Thalictrum_pubescens,
+[45] 		46 Thalictrum_punctatum,
+[46] 		47 Thalictrum_revolutum,
+[47] 		48 Thalictrum_rhynchocarpum,
+[48] 		49 Thalictrum_rochebruneanum,
+[49] 		50 Thalictrum_rubescens,
+[50] 		51 Thalictrum_rutifolium,
+[51] 		52 Thalictrum_smithii,
+[52] 		53 Thalictrum_simplex,
+[53] 		54 Thalictrum_sparsiflorum,
+[54] 		55 Thalictrum_squamiferum,
+[55] 		56 Thalictrum_squarrosum,
+[56] 		57 Thalictrum_strigillosum,
+[57] 		58 Thalictrum_tenue,
+[58] 		59 Thalictrum_uncinulatum,
+[59] 		60 Thalictrum_virgatum,
+[60] 		61 Thalictrum_thalictroides,
+[61] 		62 Thalictrum_elegans,
+[62] 		63 Thalictrum_fargesii,
+[63] 		64 Thalictrum_filamentosum,
+[64] 		65 Thalictrum_foeniculaceum,
+[65] 		66 Thalictrum_foliolosum,
+[66] 		67 Thalictrum_galeottii,
+[67] 		68 Thalictrum_gibbosum,
+[68] 		69 Thalictrum_grandisepalum,
+[69] 		70 Thalictrum_lankesteri,
+[70] 		71 Thalictrum_myriophyllum,
+[71] 		72 Thalictrum_peltatum,
+[72] 		73 Thalictrum_pringlei,
+[73] 		74 Thalictrum_pubigerum,
+[74] 		75 Thalictrum_rostellatum,
+[75] 		76 Thalictrum_rotundifolium,
+[76] 		77 Thalictrum_sachalinense,
+[77] 		78 Thalictrum_saniculiforme,
+[78] 		79 Thalictrum_steyermarkii,
+[79] 		80 Thalictrum_texanum,
+[80] 		81 Thalictrum_trichopus,
+[81] 		82 Thalictrum_tuberiferum,
+[82] 		83 Thalictrum_tuberosum,
+[83] 		84 Thalictrum_uchiyamae,
+[84] 		85 Thalictrum_uncatum,
+[85] 		86 Thalictrum_venulosum;
+	TREE con_50_majrule = (1:0.01107097,6:0.01702643,((2:0.01490228,3:0.01435795):0.03067779,((4:0.03966395,5:0.02984437):0.0127549,(((((7:0.002040752,14:0.002497072,82:0.00356442):0.000909274,(46:0.002097001,(64:0.006146109,84:0.005611391):0.002431676):0.0008779558):0.004650531,((22:0.009591876,61:0.005582837):0.007708203,34:0.006190042):0.001673059):0.001138809,50:0.005709745):0.008917451,(((((((((((8:0.01346472,43:0.001899345,86:0.003410615):0.002043702,((((13:0.0009842962,80:0.00310217):0.0005454488,26:0.0005209351):0.001236923,(27:0.001791074,42:0.005180334):0.0005265359):0.0007653366,39:0.002665546):0.003189282):0.004445437,(20:0.0008444194,51:0.003369393):0.005391769,63:0.004024374):0.001317336,((10:0.01868614,36:0.002654873):0.002129236,((12:0.001407135,23:0.0005990074,35:0.001011499):0.001915802,85:0.009175216):0.0006013057):0.001371333):0.001617358,(((((9:0.002694751,(58:0.005524115,83:0.005319104):0.0008435566):0.001456581,(((((((15:0.002563689,45:0.0009624615):0.002050355,47:0.0001781737):0.0008215123,24:0.0001771123):0.004005206,((29:0.003429559,56:0.001314134):0.00141312,(30:0.0004672397,(37:0.002461718,53:0.0002436012):0.0004819282):0.001053019):0.0007629714):0.001240169,(49:0.007063476,69:0.001554293):0.001949045):0.002225098,25:0.00280725):0.001291865,31:0.003864798):0.002917388):0.001374428,16:0.006070035):0.001357807,(((18:0.005774862,41:0.004250811):0.001788294,77:0.006881194):0.001848791,21:0.006238302):0.0009505882):0.0006616149,((40:0.0007754917,71:0.001589051):0.001842475,59:0.003603966):0.002843821):0.0007279195):0.001781711,((((((11:0.003642607,78:0.004377043):0.001501117,76:0.001903133):0.001541856,52:0.004665458):0.001105903,(28:0.003017582,(44:0.001245745,54:0.002789863):0.0004379825):0.001668396,62:0.003097964):0.002115535,55:0.00376436):0.0005657869,75:0.01036718):0.0006612992):0.0009993731,((((((19:0.001424745,73:0.0002550684):0.001701162,67:0.001702964):0.0004875601,(57:0.002169474,74:0.001821402):0.0008345093):0.0004161538,(32:0.0003812297,70:0.002078131):0.001212295,79:0.001976377):0.003398801,33:0.006645635,72:0.008940377):0.00133262,68:0.002361083):0.006490463):0.0006006024,((48:0.009543001,66:0.006951493):0.002655969,60:0.008014302):0.00234331):0.0008479937,(17:0.005889842,65:0.008041993):0.001512589):0.001778586,81:0.004865285):0.003312763,38:0.01056541):0.008682877):0.003347722):0.00434358):0.03401318);
+
+END;
+
+
+
+
