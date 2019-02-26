@@ -93,7 +93,7 @@ Black density plot is null distribution of K values from 1000 simulations of Bro
 ### Geomorph Implimentation 
 Significance is assessed by permuting the data along the tips of the phylogeny. 
 
-```{r Geomorph Multivarite BloombergsK}
+```{r Geomorph Multivarite BloombergsK }
 zzz<-physignal(avgScentCompounds,trimedTree)
 zzz
 ```
