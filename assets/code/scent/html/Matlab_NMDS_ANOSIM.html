@@ -1,0 +1,210 @@
+<head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <!--
+This HTML was auto-generated from MATLAB code.
+To make changes, update the MATLAB code and republish this document.
+      --><title>Thalictrum Scent NMDS and ANOSIM</title><meta name="generator" content="MATLAB 9.0"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2019-02-26"><meta name="DC.source" content="Matlab_NMDS_ANOSIM.m"><style type="text/css">
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outine:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
+
+html { min-height:100%; margin-bottom:1px; }
+html body { height:100%; margin:0px; font-family:Arial, Helvetica, sans-serif; font-size:10px; color:#000; line-height:140%; background:#fff none; overflow-y:scroll; }
+html body td { vertical-align:top; text-align:left; }
+
+h1 { padding:0px; margin:0px 0px 25px; font-family:Arial, Helvetica, sans-serif; font-size:1.5em; color:#d55000; line-height:100%; font-weight:normal; }
+h2 { padding:0px; margin:0px 0px 8px; font-family:Arial, Helvetica, sans-serif; font-size:1.2em; color:#000; font-weight:bold; line-height:140%; border-bottom:1px solid #d6d4d4; display:block; }
+h3 { padding:0px; margin:0px 0px 5px; font-family:Arial, Helvetica, sans-serif; font-size:1.1em; color:#000; font-weight:bold; line-height:140%; }
+
+a { color:#005fce; text-decoration:none; }
+a:hover { color:#005fce; text-decoration:underline; }
+a:visited { color:#004aa0; text-decoration:none; }
+
+p { padding:0px; margin:0px 0px 20px; }
+img { padding:0px; margin:0px 0px 20px; border:none; }
+p img, pre img, tt img, li img, h1 img, h2 img { margin-bottom:0px; } 
+
+ul { padding:0px; margin:0px 0px 20px 23px; list-style:square; }
+ul li { padding:0px; margin:0px 0px 7px 0px; }
+ul li ul { padding:5px 0px 0px; margin:0px 0px 7px 23px; }
+ul li ol li { list-style:decimal; }
+ol { padding:0px; margin:0px 0px 20px 0px; list-style:decimal; }
+ol li { padding:0px; margin:0px 0px 7px 23px; list-style-type:decimal; }
+ol li ol { padding:5px 0px 0px; margin:0px 0px 7px 0px; }
+ol li ol li { list-style-type:lower-alpha; }
+ol li ul { padding-top:7px; }
+ol li ul li { list-style:square; }
+
+.content { font-size:1.2em; line-height:140%; padding: 20px; }
+
+pre, code { font-size:12px; }
+tt { font-size: 1.2em; }
+pre { margin:0px 0px 20px; }
+pre.codeinput { padding:10px; border:1px solid #d3d3d3; background:#f7f7f7; }
+pre.codeoutput { padding:10px 11px; margin:0px 0px 20px; color:#4c4c4c; }
+pre.error { color:red; }
+
+@media print { pre.codeinput, pre.codeoutput { word-wrap:break-word; width:100%; } }
+
+span.keyword { color:#0000FF }
+span.comment { color:#228B22 }
+span.string { color:#A020F0 }
+span.untermstring { color:#B20000 }
+span.syscmd { color:#B28C00 }
+
+.footer { width:auto; padding:10px 0px; margin:25px 0px 0px; border-top:1px dotted #878787; font-size:0.8em; line-height:140%; font-style:italic; color:#878787; text-align:left; float:none; }
+.footer p { margin:0px; }
+.footer a { color:#878787; }
+.footer a:hover { color:#878787; text-decoration:underline; }
+.footer a:visited { color:#878787; }
+
+table th { padding:7px 5px; text-align:left; vertical-align:middle; border: 1px solid #d6d4d4; font-weight:bold; }
+table td { padding:7px 5px; text-align:left; vertical-align:top; border:1px solid #d6d4d4; }
+
+
+
+
+
+  </style></head><body><div class="content"><h1>Thalictrum Scent NMDS and ANOSIM</h1><!--introduction--><p>Last updated March 10, 2018</p><p>This script accompanies the manuscript 'Scent Matters: Repeated loss of insect attraction by floral scent accompanies transitions to wind pollination.'</p><p>Non-multidimensioanl Scaling (NMDS) and ANalysis Of SIMilarity (ANOSIM) are computed with Thalictrum Scent data.</p><p>This scritp calls functions from the 'Fathom Toolbox for Matlab' Citation: Jones, D. L. 2015. Fathom Toolbox for Matlab: software for multivariate ecological and oceanographic data analysis. College of Marine Science, University of South Florida, St. Petersburg, FL, USA.</p><!--/introduction--><h2>Contents</h2><div><ul><li><a href="#1"><b>Load Data</b></a></li><li><a href="#2"><b>NMDS Analysis</b></a></li><li><a href="#3"><b>NMDS Plot</b></a></li><li><a href="#4"><b>1- Way ANOSIM</b></a></li></ul></div><h2><b>Load Data</b><a name="1"></a></h2><p>Data description: Rows are individual samples (species), Columns are measurments for each sample as follows,</p><div><ul><li><i>SpeciesName_Abbreviation</i>: Three letter species apperciation</li><li><i>NameAs_number</i>: Name of Species as a number</li><li><i>Pollination_Syndrome</i>: 1 Insect, 2 Wind</li><li><i>Time</i>(min)_: Scent Collection Time</li><li><i>Mass</i>(g)_: Mass of tissue in grams</li><li><i>Mass*time</i>: Time_(min) * Mass_(g)</li><li>The remainder of columns are emission rates (ng emitted/g tissue * min) for biochemicals emitted by samples</li></ul></div><pre class="codeinput"><span class="comment">%Clear Enviornment and Read in Data</span>
+clear <span class="string">all</span>; close <span class="string">all</span>; clc;
+cd <span class="string">'/Volumes/GoogleDrive/My Drive/Projects/Jesusthebotanist.github.io'</span>
+floralData = readtable(<span class="string">'assets/code/scent/compounds.csv'</span>);
+
+<span class="comment">%Move to the FathomToolBox folder for relavant functions.</span>
+cd <span class="string">..</span>
+cd <span class="string">'assets/code/scent/FathomToolBox'</span>
+</pre><pre class="codeoutput">Warning: Variable names were modified to make them valid MATLAB identifiers. 
+</pre><pre class="codeoutput error">Error using cd
+Cannot CD to assets/code/scent/FathomToolBox (Name is nonexistent or not a directory).
+
+Error in Matlab_NMDS_ANOSIM (line 32)
+cd 'assets/code/scent/FathomToolBox'
+</pre><h2><b>NMDS Analysis</b><a name="2"></a></h2><p>NMDS was calculated with both built in Matlab 'mdscale' function and Fathom toolkit function 'F_nmds.' Similar results were obtained therefore, we used 'mdscale' for all downstream analysis.</p><pre class="codeinput"><span class="comment">%Extract only scent data</span>
+floralScent = floralData(:,8:end);
+
+floralScent = table2array(floralScent).';
+
+<span class="comment">%Calculate Bray-Curtis distance with Fathom Package</span>
+F_dissimilaritiesBC = f_braycurtis(floralScent);
+
+<span class="comment">%2 axis nMDS with Matlab 'mdscale'</span>
+[F_Y,F_stress,F_disparities] = mdscale(F_dissimilaritiesBC,2,<span class="keyword">...</span>
+    <span class="string">'criterion'</span>,<span class="string">'stress'</span>,<span class="string">'Start'</span>,<span class="string">'random'</span>,<span class="string">'Replicates'</span>,500);
+
+<span class="comment">%2 axi NMDS with Fathom Package 'f_nmds'</span>
+F_Fathom_nmds = f_nmds(F_dissimilaritiesBC,2);
+
+<span class="comment">%Compare Stress Value Output of Floral Data Between Matlab and</span>
+<span class="comment">%Fathom Functions</span>
+disp ({<span class="string">'Matlab mdscale function 2 Axis Floral stress value ='</span>, F_stress});
+disp ({<span class="string">'Fathom f_nmds function 2 Axis Floral stress value ='</span>,<span class="keyword">...</span>
+        F_Fathom_nmds.stress});
+</pre><h2><b>NMDS Plot</b><a name="3"></a></h2><p>The following section generates the NMDS plot.</p><p>Note: Plots are generated with Matlab 'gscatter' function which labeles individual. However in order to see labels you must highlight points with your mouse curser. See 'gscatter' help for more detail.</p><pre class="codeinput"><span class="comment">%2-Axis nMDS plot with Pollination Syndrome Labels</span>
+figure(1);
+    gscatter(F_Y(:,1),F_Y(:,2),<span class="keyword">...</span>
+        (table2array(floralData(:,{<span class="string">'Pollination_Syndrome'</span>}))),<span class="string">'br'</span>,<span class="string">'..&gt;'</span>);
+        legend(<span class="string">'Insect'</span>,<span class="string">'Wind'</span>);
+        xlabel(<span class="string">'NMDS 1'</span>);
+        ylabel(<span class="string">'NMDS 2'</span>);
+        title({
+             <span class="string">'Floral nMDS'</span>
+             [<span class="string">'Stress = '</span>, num2str(F_stress)];
+             });
+    gname(table2array(floralData(:,{<span class="string">'Species_Name_Abbreviation'</span>})));
+</pre><h2><b>1- Way ANOSIM</b><a name="4"></a></h2><p>Calculate 1-way ANOSIM using Fathom Toolbox 'f_anosim' funciton.</p><pre class="codeinput"><span class="comment">% ANOSIM - Group by Species</span>
+[F_r,F_p] = f_anosim(F_dissimilaritiesBC,<span class="keyword">...</span>
+            (table2array(floralData(:,{<span class="string">'F_name_number'</span>}))),1,1000,1);
+
+<span class="comment">% ANOSIM - Group by Pollination syndrome</span>
+[FP_r, FP_p] = f_anosim(F_dissimilaritiesBC,<span class="keyword">...</span>
+               (table2array(floralData(:,{<span class="string">'Pollination_Syndrome'</span>}))),<span class="keyword">...</span>
+               1,1000,1);
+</pre><p class="footer"><br><a href="http://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2016a</a><br></p></div><!--
+##### SOURCE BEGIN #####
+%% Thalictrum Scent NMDS and ANOSIM 
+% Last updated March 10, 2018
+%
+% This script accompanies the manuscript 'Scent Matters: Repeated loss of 
+% insect attraction by floral scent accompanies transitions to wind 
+% pollination.'  
+% 
+% Non-multidimensioanl Scaling (NMDS) and ANalysis Of 
+% SIMilarity (ANOSIM) are computed with Thalictrum Scent data. 
+% 
+% This scritp calls functions from the 'Fathom Toolbox for Matlab'
+% Citation: Jones, D. L. 2015. Fathom Toolbox for Matlab: software for multivariate ecological and oceanographic data analysis. College of Marine Science, University of South Florida, St. Petersburg, FL, USA.
+%% *Load Data* 
+% Data description: Rows are individual samples (species), Columns are 
+% measurments for each sample as follows,
+%
+% * _SpeciesName_Abbreviation_: Three letter species apperciation
+% * _NameAs_number_: Name of Species as a number
+% * _Pollination_Syndrome_: 1 Insect, 2 Wind
+% * _Time_(min)_: Scent Collection Time
+% * _Mass_(g)_: Mass of tissue in grams
+% * _Mass*time_: Time_(min) * Mass_(g)
+% * The remainder of columns are emission rates (ng emitted/g tissue * min) for biochemicals emitted by samples 
+
+%Clear Enviornment and Read in Data
+clear all; close all; clc;
+cd '/Volumes/GoogleDrive/My Drive/Projects/Jesusthebotanist.github.io' 
+floralData = readtable('assets/code/scent/compounds.csv'); 
+
+%Move to the FathomToolBox folder for relavant functions. 
+cd ..
+cd 'assets/code/scent/FathomToolBox'
+%% *NMDS Analysis*
+% NMDS was calculated with both built in Matlab 'mdscale' function and
+% Fathom toolkit function 'F_nmds.' Similar results were obtained
+% therefore, we used 'mdscale' for all downstream analysis. 
+
+%Extract only scent data
+floralScent = floralData(:,8:end);
+
+floralScent = table2array(floralScent).';
+
+%Calculate Bray-Curtis distance with Fathom Package
+F_dissimilaritiesBC = f_braycurtis(floralScent);
+    
+%2 axis nMDS with Matlab 'mdscale'
+[F_Y,F_stress,F_disparities] = mdscale(F_dissimilaritiesBC,2,...
+    'criterion','stress','Start','random','Replicates',500); 
+
+%2 axi NMDS with Fathom Package 'f_nmds'
+F_Fathom_nmds = f_nmds(F_dissimilaritiesBC,2);   
+
+%Compare Stress Value Output of Floral Data Between Matlab and 
+%Fathom Functions
+disp ({'Matlab mdscale function 2 Axis Floral stress value =', F_stress});
+disp ({'Fathom f_nmds function 2 Axis Floral stress value =',...
+        F_Fathom_nmds.stress});
+%% *NMDS Plot*
+% The following section generates the NMDS plot.
+%
+% Note: Plots are generated with Matlab 'gscatter' function which labeles
+% individual. However in order to see labels you must highlight points 
+% with your mouse curser. See 'gscatter' help for more detail. 
+
+%2-Axis nMDS plot with Pollination Syndrome Labels
+figure(1);
+    gscatter(F_Y(:,1),F_Y(:,2),...
+        (table2array(floralData(:,{'Pollination_Syndrome'}))),'br','..>');
+        legend('Insect','Wind');
+        xlabel('NMDS 1');
+        ylabel('NMDS 2');
+        title({
+             'Floral nMDS'
+             ['Stress = ', num2str(F_stress)]; 
+             });      
+    gname(table2array(floralData(:,{'Species_Name_Abbreviation'})));
+%% *1- Way ANOSIM* 
+% Calculate 1-way ANOSIM using Fathom Toolbox 'f_anosim' funciton. 
+
+% ANOSIM - Group by Species
+[F_r,F_p] = f_anosim(F_dissimilaritiesBC,...
+            (table2array(floralData(:,{'F_name_number'}))),1,1000,1);
+           
+% ANOSIM - Group by Pollination syndrome
+[FP_r, FP_p] = f_anosim(F_dissimilaritiesBC,...
+               (table2array(floralData(:,{'Pollination_Syndrome'}))),...
+               1,1000,1);
+##### SOURCE END #####
+-->
