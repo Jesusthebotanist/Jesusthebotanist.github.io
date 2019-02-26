@@ -1,21 +1,9 @@
 ---
 output: html_document
 header-includes: \usepackage{titling}
-layout: post
-categories: Projects
-image: Scent.png
 ---
-During my undergrad I had the fantastic oppertunity to help a fellow undergrad in the lab, Theresa Wang, with her thesis project. Her thesis was a collaberative project between Veronica Di Stilio and Jeff Riffel's lab to investigated the floral scent profiles between insect and wind pollinated species of *Thalictrum*. The paper was published last in [Annuals of Botany](https://academic.oup.com/aob/article/123/2/289/5056502) (Email me if you're stuck behind paywall). I joined the group while I was taking [BIOL 419: Data Science for Biologist](https://docs.wixstatic.com/ugd/b83b01_bb7ba7ff3216490eab0c86c628431108.pdf) my first every computing class; I need a project for the course and Theresa had some data just for that! The entire experiance really pushed me to learn skill that I am now utalizing in my Ph.D, as well as a nice change of pace from all the PCR I was running. 
 
-The question we wanted to address was, How similar/different are floral scent profiles between wind and insect pollinated species? One classic method is  assesing this with multivariate scent data is non-multidimensional scaling (nMDS). This method reprsents the pariwise disimilarities in low dimensional space, similar to a Principle Component Analysis (PCA).
-
-However our data contains member of different species, which may share similarity simply because they are closely related. Therefore it is important to asses whether species resemble each other  needed to test whether species resmelbled each other simply due to phylogenetic histoyr. 
-
-The following is a slight modificaiton from the published supplementary material found in this [github repo](https://github.com/Jesusthebotanist/Thalictrum-Floral-Scent). The nMDS analysis is written in Matlab the programming language taught in BIOl419 while the rest is written in R (I switched half way through R is free). I walk through both scripts below:
-
-## nMDS in Matlab
-
-The data is floral scent analyzed by gas chromatography-mass spectrometry from 11 species of Thalictrum and electroantennogram (EAG) responses from  buff-tailed bumblebee antenna exposed to floral scent extract from each *Thalictrum* species. This script does two things,
+## Tests for Phylogenetic Signal in R
 
 1) Calculates Blomberg's K for the Floral scent data and the EAG
 
