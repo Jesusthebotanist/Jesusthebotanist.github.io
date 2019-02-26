@@ -1,7 +1,4 @@
 ---
-title: "Thalictrum Scent: Phylogenetic Signal"
-author: Jesus Martinez-Gomez
-date: february 25, 2019
 output: html_document
 header-includes: \usepackage{titling}
 layout: post
@@ -29,20 +26,19 @@ knitr::opts_chunk$set(echo=TRUE, warning = FALSE, message = FALSE)
 #Load Libraries
 library(phytools)
 library(geiger)
-#library(adephylo)
 library(picante) 
 library(phylocurve)
 library(geomorph)
 library(diversitree)
 
 # Import Scent Compound data
-scent <- read.csv("assets/data/scent/compounds.csv") 
+scent <- read.csv("assets/code/scent/compounds.csv") 
 
 # Read in pre-cooked Maximum A Posterior Phylogeny (MAP)
-tree <-read.nexus("assets/data/scent/THALICTRUM86.tre") 
+tree <-read.nexus("assets/code/scent/THALICTRUM86.tre") 
 
 # Import EAG data
-EAG <- read.csv("assets/data/scent/EAGresponses.csv")
+EAG <- read.csv("assets/code/scent/EAGresponses.csv")
 ```
 
 # Phylogenetic Signal Data Wrangle
