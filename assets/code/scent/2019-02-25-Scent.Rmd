@@ -3,12 +3,6 @@ output: html_document
 header-includes: \usepackage{titling}
 ---
 
-## Tests for Phylogenetic Signal in R
-
-1) Calculates Blomberg's K for the Floral scent data and the EAG
-
-2) Performed an ancestral state reconstrion of bumble bee EAG response/generates Figure 4 from the manuscript
-
 ```{r setup, include=FALSE}
 knitr::opts_knit$set(root.dir = '/Volumes/GoogleDrive/My Drive/Projects/Jesusthebotanist.github.io')
 knitr::opts_chunk$set(echo=TRUE, warning = FALSE, message = FALSE)
@@ -35,7 +29,7 @@ K < 1 closely related species are less similar than expected under brownian moti
 K = 1 closely related species are as similar/different as expected under brownian motion
 K >1  closely related species are more similar than expected under brownian motion.  
 
-This is traditionally performed on single variable, however biologsit are often intrested if the entire set of variable are similar. Because our GCMS data is multivariate (~50 compounds), we can calculate Blombergs K for each individaul compound as well as the entire datset as a whole. 
+This is traditionally performed on single trait, however biologist are often intrested in how complex traits composed of many different variable evolve.  Because our GCMS data is multivariate (~50 compounds), we can calculate Blombergs K for each individaul compound as well as the entire datset as a whole. 
 
 Prune MAP phylogeny to species with GCMS data
 ```{r Trim Tree for Phylogenetic Signal}

@@ -10,7 +10,7 @@ During my undergrad I had the fantastic oppertunity to help a fellow undergrad i
 
 The question we wanted to address was, **How similar/different are floral scent profiles between wind and insect pollinated species?** One classic way of addressing this question is to use non-multidimensional scaling (nMDS). This method reduce the pariwise disimilarities in low dimensional space (typically two-axis), similar to a Principle Component Analysis (PCA), theirby reducing the dimensionality of our multivariate data. However our data contains a confounding feature, each data point is realted to every other point by commmon decent, therefore similarity/difference could simply be due to close evolutionary relatedness. 
 
-Below I will run through the scripts I wrote to perform nMDS and a subsequent pose I'll go through the scripts to run to test for phylogenetic signal. These scripts are a slight modificaiton (typos fixed and more elaboration) from the published supplementary material found in this [github repo](https://github.com/Jesusthebotanist/Thalictrum-Floral-Scent). The nMDS analysis is written in Matlab the programming language taught in BIOL419 while the rest is written in R (I switched halfway through because R is free). 
+Below I will run through the scripts I wrote to perform nMDS and a subsequent pose I'll go through the scripts to run to test for [phylogenetic signal](https://jesusthebotanist.github.io/rambles/ScentR.html). These scripts are a slight modificaiton (typos fixed and more elaboration) from the published supplementary material found in this [github repo](https://github.com/Jesusthebotanist/Thalictrum-Floral-Scent). The nMDS analysis is written in Matlab the programming language taught in BIOL419 while the rest is written in R (I switched halfway through because R is free). 
 
 ## The Datas
 
@@ -87,7 +87,7 @@ figure(1);
              [<span class="string">'Stress = '</span>, num2str(F_stress)];
              });
     gname(table2array(floralData(:,{<span class="string">'Species_Name_Abbreviation'</span>})));
-</pre><img vspace="5" hspace="5" src="Matlab_NMDS_ANOSIM_01.png" style="width:560px;height:420px;" alt=""> <h2><b>1- Way ANOSIM</b><a name="4"></a></h2><p>Calculate 1-way ANOSIM using Fathom Toolbox 'f_anosim' funciton.</p><pre class="codeinput"><span class="comment">% ANOSIM - Group by Species</span>
+</pre><img vspace="5" hspace="5" src="_posts/Matlab_NMDS_ANOSIM_01.png" style="width:560px;height:420px;" alt=""> <h2><b>1- Way ANOSIM</b><a name="4"></a></h2><p>Calculate 1-way ANOSIM using Fathom Toolbox 'f_anosim' funciton.</p><pre class="codeinput"><span class="comment">% ANOSIM - Group by Species</span>
 [F_r,F_p] = f_anosim(F_dissimilaritiesBC,<span class="keyword">...</span>
             (table2array(floralData(:,{<span class="string">'F_name_number'</span>}))),1,1000,1);
 
