@@ -67,7 +67,7 @@ avgScentCompounds <- as.matrix(avgScentCompounds)
 avgScentCompounds[,1:5] 
 ```
 
-####Bloombergs K
+#### Bloombergs K VOC 
 Data is formated, we can now calculate Blombergs K for each compound individually. 
 ```{r BlombergsK Individual}
 yyy <- multiPhylosignal(avgScentCompounds, tree)
@@ -92,16 +92,15 @@ zzz<-physignal(avgScentCompounds,trimedTree)
 ```
 
 ## Test for Phylogenetic Signal
-In addition to the VOC compounds we had an additional data source. 
+In addition to the VOC compounds GCMS we had some really awsome EAG data. We used this to show that Bees exhibited a stronger response to species with insect pollination syndromes rather then species with wind pollination syndromes. We wanted to test phylogenetic signal in as well as made an ancestral reconstruction. 
 
-Prune Tree down to 8 species with EAG data
 ```{r Trim Tree for Ancestral State Reconstruction}
 keepSpecies <- EAG$Species_Name_Full
-trimedTree<-drop.tip(tree,tree$tip.label[-match(keepSpecies, tree$tip.label)])
+trimedTree<-drop.tip(tree,
+                     tree$tip.label[-match(keepSpecies, tree$tip.label)])
 plot(trimedTree) 
 ```
 
-## Data Wrangle EAG Response 
 ```{r EAGResponse Data Wrangle}
 continuousResponse <- as.matrix(data.frame(row.names = EAG$Species_Name_Full,
                                  EAG$EAG))[,1]
@@ -115,7 +114,7 @@ EAGBloombergsK <- as.matrix(continuousResponse)
 multiPhylosignal(EAGBloombergsK, tree)
 ```
 
-# Ancestrl State Reconstruction
+####  Ancestrl State Reconstruction
 ```{r EAGAncStateRecon }
 g <- contMap(trimedTree, continuousResponse, plot = TRUE, type="phylogram")
 ````

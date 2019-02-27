@@ -19,6 +19,7 @@ Below I will run through the scripts I wrote to perform nMDS and a subsequent po
 2) Electroantennogram (EAG) responses from buff-tailed bumblebee antenna exposed to floral scent extract from 8 *Thalictrum* species. I think this kind of data is really cool. 
 
 ## nMDS in Matlab
+<head>
       <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
    <!--
 This HTML was auto-generated from MATLAB code.
