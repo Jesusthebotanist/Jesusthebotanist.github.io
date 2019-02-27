@@ -197,3 +197,6 @@ nodelabels( pie=res_simmap$ace,
 
 
 ```
+
+References
+Jones et al. 2015
