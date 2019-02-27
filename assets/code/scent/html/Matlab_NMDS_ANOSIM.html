@@ -6,7 +6,7 @@
    <!--
 This HTML was auto-generated from MATLAB code.
 To make changes, update the MATLAB code and republish this document.
-      --><title>Matlab_NMDS_ANOSIM</title><meta name="generator" content="MATLAB 9.0"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2019-02-26"><meta name="DC.source" content="Matlab_NMDS_ANOSIM.m"><style type="text/css">
+      --><title>Matlab_NMDS_ANOSIM</title><meta name="generator" content="MATLAB 9.0"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2019-02-27"><meta name="DC.source" content="Matlab_NMDS_ANOSIM.m"><style type="text/css">
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outine:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
 
 html { min-height:100%; margin-bottom:1px; }
@@ -66,17 +66,17 @@ table td { padding:7px 5px; text-align:left; vertical-align:top; border:1px soli
 
 
 
-  </style></head><body><div class="content"><h2>Contents</h2><div><ul><li><a href="#1"><b>Load Data</b></a></li><li><a href="#2"><b>NMDS Analysis</b></a></li><li><a href="#3"><b>nMDS Plot</b></a></li><li><a href="#4"><b>1- Way ANOSIM</b></a></li></ul></div><h2><b>Load Data</b><a name="1"></a></h2><pre class="codeinput"><span class="comment">%Clear Enviornment and Read in Data</span>
+  </style></head><body><div class="content"><h2>Contents</h2><div><ul><li><a href="#1"><b>NMDS Analysis</b></a></li><li><a href="#2"><b>nMDS Plot</b></a></li><li><a href="#3"><b>1- Way ANOSIM</b></a></li><li><a href="#4">References</a></li></ul></div><h2><b>NMDS Analysis</b><a name="1"></a></h2><p>NMDS was calculated with both built-in Matlab function 'mdscale' and the Fathom toolkit function 'F_nmds.' (Jones 2015). Similar results were obtained with both methods and we used 'mdscale' for all downstream analysis.</p><pre class="codeinput"><span class="comment">% Clear enviornment and read in data</span>
 clear <span class="string">all</span>; close <span class="string">all</span>; clc;
 cd <span class="string">'/Volumes/GoogleDrive/My Drive/Projects/Jesusthebotanist.github.io'</span>;
 floralData = readtable(<span class="string">'assets/code/scent/compounds.csv'</span>);
 
-<span class="comment">%Move to the FathomToolBox folder for relavant functions.</span>
+<span class="comment">% Move to the FathomToolBox folder to call relavant functions.</span>
 cd <span class="string">..</span>
 cd <span class="string">'/Volumes/GoogleDrive/My Drive/Projects/Jesusthebotanist.github.io/assets/code/scent/FathomToolBox/'</span>
-</pre><pre class="codeoutput">Warning: Variable names were modified to make them valid
-MATLAB identifiers. 
-</pre><h2><b>NMDS Analysis</b><a name="2"></a></h2><p>NMDS was calculated with both built-in Matlab function 'mdscale' and the Fathom toolkit function 'F_nmds.' (Jones 2015). Similar results were obtained therefore, we used 'mdscale' for all downstream analysis.</p><pre class="codeinput"><span class="comment">% Extract only scent data</span>
+
+
+<span class="comment">% Extract only scent data</span>
 floralScent = floralData(:,8:end);
 floralScent = table2array(floralScent).';
 
@@ -95,7 +95,8 @@ F_Fathom_nmds = f_nmds(F_dissimilaritiesBC,2);
 disp ({<span class="string">'Matlab mdscale function 2 Axis Floral stress value ='</span>, F_stress});
 disp ({<span class="string">'Fathom f_nmds function 2 Axis Floral stress value ='</span>,<span class="keyword">...</span>
         F_Fathom_nmds.stress});
-</pre><pre class="codeoutput">
+</pre><pre class="codeoutput">Warning: Variable names were modified to make them valid MATLAB identifiers. 
+
 ---------------------------------------------------------
 Selecting min STRESS from 10 random start configurations:
 ---------------------------------------------------------
@@ -116,7 +117,7 @@ Best configuration has STRESS = 0.1825212
 
     'Fathom f_nmds function 2 Axis ...'    [0.1825]
 
-</pre><h2><b>nMDS Plot</b><a name="3"></a></h2><p>Generate two dimensional nMDS plot (Figure 2b).</p><pre class="codeinput"><span class="comment">% 2-Axis nMDS plot with Pollination Syndrome Labels</span>
+</pre><h2><b>nMDS Plot</b><a name="2"></a></h2><p>Plot a 2D nNMDS. These points are for Figure 2b</p><pre class="codeinput"><span class="comment">% 2-Axis nMDS plot with Pollination Syndrome Labels</span>
 figure(1);
     gscatter(F_Y(:,1),F_Y(:,2),<span class="keyword">...</span>
         (table2array(floralData(:,{<span class="string">'Pollination_Syndrome'</span>}))),<span class="string">'br'</span>,<span class="string">'..&gt;'</span>);
@@ -128,7 +129,7 @@ figure(1);
              [<span class="string">'Stress = '</span>, num2str(F_stress)];
              });
     gname(table2array(floralData(:,{<span class="string">'Species_Name_Abbreviation'</span>})));
-</pre><img vspace="5" hspace="5" src="Matlab_NMDS_ANOSIM_01.png" style="width:560px;height:420px;" alt=""> <h2><b>1- Way ANOSIM</b><a name="4"></a></h2><p>Calculate 1-way ANOSIM using Fathom Toolbox 'f_anosim' funciton.</p><pre class="codeinput"><span class="comment">% ANOSIM - Group by Species</span>
+</pre><img vspace="5" hspace="5" src="Matlab_NMDS_ANOSIM_01.png" style="width:560px;height:420px;" alt=""> <h2><b>1- Way ANOSIM</b><a name="3"></a></h2><p>ANalysis Of SIMilarity (ANOSIM)is very similar to ANOVA, it is a method to determine if the means of grouping similar/different, however it is performed using the disimilarities rather than the raw data. We run ANOSIM grouping points by species (technical replicates) and by wind and insect pollinated taxa. We only find significance amongest species.</p><pre class="codeinput"><span class="comment">% ANOSIM - Group by Species</span>
 [F_r,F_p] = f_anosim(F_dissimilaritiesBC,<span class="keyword">...</span>
             (table2array(floralData(:,{<span class="string">'F_name_number'</span>}))),1,1000,1);
 
@@ -222,22 +223,23 @@ Pair-Wise Tests:
   1  2: R = -0.0376  p = 0.7210 (1000 of 98672427616 possible perms) 
 
 ==================================================
-</pre><p class="footer"><br><a href="http://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2016a</a><br></p></div><!--
+</pre><h2>References<a name="4"></a></h2><p>Jones DL. 2015. <i>Fathom Toolbox for Matlab: software for multivariate ecological and oceanographic data analysis</i>. College of Marine Science, University of South Florida, St. Petersburg, FL, USA. <a href="http://www.marine.usf.edu/user/djones/">http://www.marine.usf.edu/user/djones/</a></p><p class="footer"><br><a href="http://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2016a</a><br></p></div><!--
 ##### SOURCE BEGIN #####
-%% *Load Data* 
+%% *NMDS Analysis*
+% NMDS was calculated with both built-in Matlab function 'mdscale' and the
+% Fathom toolkit function 'F_nmds.' (Jones 2015). Similar results were 
+% obtained with both methods and we used 'mdscale' for all 
+% downstream analysis. 
 
-%Clear Enviornment and Read in Data
+% Clear enviornment and read in data
 clear all; close all; clc;
 cd '/Volumes/GoogleDrive/My Drive/Projects/Jesusthebotanist.github.io'; 
 floralData = readtable('assets/code/scent/compounds.csv'); 
 
-%Move to the FathomToolBox folder for relavant functions. 
+% Move to the FathomToolBox folder to call relavant functions. 
 cd ..
 cd '/Volumes/GoogleDrive/My Drive/Projects/Jesusthebotanist.github.io/assets/code/scent/FathomToolBox/'
-%% *NMDS Analysis*
-% NMDS was calculated with both built-in Matlab function 'mdscale' and the
-% Fathom toolkit function 'F_nmds.' (Jones 2015). Similar results were 
-% obtained therefore, we used 'mdscale' for all downstream analysis. 
+
 
 % Extract only scent data
 floralScent = floralData(:,8:end);
@@ -259,7 +261,7 @@ disp ({'Matlab mdscale function 2 Axis Floral stress value =', F_stress});
 disp ({'Fathom f_nmds function 2 Axis Floral stress value =',...
         F_Fathom_nmds.stress});
 %% *nMDS Plot*
-% Generate two dimensional nMDS plot (Figure 2b). 
+% Plot a 2D nNMDS. These points are for Figure 2b 
 
 % 2-Axis nMDS plot with Pollination Syndrome Labels
 figure(1);
@@ -274,7 +276,11 @@ figure(1);
              });      
     gname(table2array(floralData(:,{'Species_Name_Abbreviation'})));
 %% *1- Way ANOSIM* 
-% Calculate 1-way ANOSIM using Fathom Toolbox 'f_anosim' funciton. 
+% ANalysis Of SIMilarity (ANOSIM)is very similar to ANOVA, it is a method 
+% to determine if the means of grouping similar/different, however it is 
+% performed using the disimilarities rather than the raw data. We run 
+% ANOSIM grouping points by species (technical replicates) and by wind and
+% insect pollinated taxa. We only find significance amongest species. 
 
 % ANOSIM - Group by Species
 [F_r,F_p] = f_anosim(F_dissimilaritiesBC,...
@@ -284,5 +290,13 @@ figure(1);
 [FP_r, FP_p] = f_anosim(F_dissimilaritiesBC,...
                (table2array(floralData(:,{'Pollination_Syndrome'}))),...
                1,1000,1);
+           
+%% References
+% Jones DL. 2015. _Fathom Toolbox for Matlab: software for multivariate 
+% ecological and oceanographic data analysis_. College of Marine Science, 
+% University of South Florida, St. Petersburg, FL, USA. 
+% http://www.marine.usf.edu/user/djones/
+
+
 ##### SOURCE END #####
 --></body></html>
