@@ -147,7 +147,7 @@ figure(1);
              [<span class="string">'Stress = '</span>, num2str(F_stress)];
              });
     gname(table2array(floralData(:,{<span class="string">'Species_Name_Abbreviation'</span>})));
-</pre><img vspace="5" hspace="5" src="Matlab_NMDS_ANOSIM_01.png" style="width:560px;height:420px;" alt=""> <h2><b>1- Way ANOSIM</b><a name="3"></a></h2><p>ANalysis Of SIMilarity (ANOSIM)is very similar to ANOVA, it is a method to determine if the means of grouping similar/different, however it is performed using the disimilarities rather than the raw data. We run ANOSIM grouping points by species (technical replicates) and by wind and insect pollinated taxa. We only find significance amongest species.</p><pre class="codeinput"><span class="comment">% ANOSIM - Group by Species</span>
+</pre><img vspace="5" hspace="5" src="Jesusthebotanist.github.io/_posts/Matlab_NMDS_ANOSIM_01.png" style="width:560px;height:420px;" alt=""> <h2><b>1- Way ANOSIM</b><a name="3"></a></h2><p>ANalysis Of SIMilarity (ANOSIM)is very similar to ANOVA, it is a method to determine if the means of grouping similar/different, however it is performed using the disimilarities rather than the raw data. We run ANOSIM grouping points by species (technical replicates) and by wind and insect pollinated taxa. We only find significance amongest species.</p><pre class="codeinput"><span class="comment">% ANOSIM - Group by Species</span>
 [F_r,F_p] = f_anosim(F_dissimilaritiesBC,<span class="keyword">...</span>
             (table2array(floralData(:,{<span class="string">'F_name_number'</span>}))),1,1000,1);
 
