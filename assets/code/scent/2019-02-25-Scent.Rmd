@@ -17,9 +17,14 @@ library(phylocurve)
 library(geomorph)
 library(tidyverse)
 
-scent <- read.csv("assets/code/scent/compounds.csv") # Import Scent GCMS floral scent data
-tree <-read.nexus("assets/code/scent/THALICTRUM86.tre") # Read in pre-cooked Maximum A Posterior Phylogeny (MAP)
-EAG <- read.csv("assets/code/scent/EAGresponses.csv") # Import EAG data
+ # Import Scent GCMS floral scent data
+scent <- read.csv("assets/code/scent/compounds.csv") 
+
+# Read in Maximum A Posterior Phylogeny (MAP)
+tree <-read.nexus("assets/code/scent/THALICTRUM86.tre") 
+
+# Import EAG data
+EAG <- read.csv("assets/code/scent/EAGresponses.csv") 
 ```
 
 ## Test for Phylogenetic Signal
@@ -34,7 +39,8 @@ This is traditionally performed on single trait, however biologist are often int
 Prune MAP phylogeny to species with GCMS data
 ```{r Trim Tree for Phylogenetic Signal}
 keepSpecies <- unique(as.character(scent$Species_Name_Full))
-trimedTree <- drop.tip(tree,tree$tip.label[-match(keepSpecies, tree$tip.label)])
+trimedTree <- drop.tip(tree,
+                       tree$tip.label[-match(keepSpecies, tree$tip.label)])
 plot(trimedTree) 
 ```
 
@@ -61,11 +67,12 @@ avgScentCompounds[,1:5]
 ####Bloombergs K
 Data is formated, we can now calculate Blombergs K for each compound individually. 
 ```{r BlombergsK Individual}
-multiPhylosignal(avgScentCompounds, tree)
+yyy <- multiPhylosignal(avgScentCompounds, tree)
+yyy$K
 ```
 
 
-We can now calculate Blombergs K with the entire dataset as a whole. I thikn multivariate comparative methods are still in their infense and a lot of work is being done figure out how to deal with multivarite data. There are two libraries that have this implementation, Phylocurve and Geomorph. 
+We can now calculate Blombergs K with the entire dataset as a whole. Multivariate comparative methods is still a very active area of research, luckily two active  There have been two fairly recent methods use to  There are two libraries that have this implementation, Phylocurve and Geomorph. 
 
 ####PhyloCurve Implementation
 
