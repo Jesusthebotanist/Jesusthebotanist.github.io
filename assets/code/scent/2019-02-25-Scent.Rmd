@@ -32,7 +32,7 @@ We were intrested in testing whether closely related species exhibitd similar am
 
 K < 1 closely related species are less similar than expected under brownian motion. 
 K = 1 closely related species are as similar/different as expected under brownian motion
-K >1  closely related species are more similar than expected under brownian motion.  
+K > 1  closely related species are more similar than expected under brownian motion.  
 
 This is traditionally performed on single trait, however biologist are often intrested in how complex traits composed of many different variable evolve.  Because our GCMS data is multivariate (~50 compounds), we can calculate Blombergs K for each individaul compound as well as the entire datset as a whole. 
 
@@ -71,11 +71,17 @@ avgScentCompounds[,1:5]
 Data is formated, we can now calculate Blombergs K for each compound individually. 
 ```{r BlombergsK Individual}
 yyy <- multiPhylosignal(avgScentCompounds, tree)
-yyy$K
+yyy[,1, drop=FALSE]
 ```
+All compound have a K >1 indicating that closely related species are more similar than expected under brownian motion potentially due to other intresting process such as the evolution of pollination syndrome. 
+
+While each compound/ biochemical pathway is likelie to be under its own evolutionary pressure, we may also expect that the entire floral emission profile may have as a whole. 
+
+We can now calculate Blombergs K with the entire dataset as a whole. We test whether the entire floral boquet as a unit has less signal then expect under brownian motion. We ma sy expect that the entire floral 
 
 
-We can now calculate Blombergs K with the entire dataset as a whole. Multivariate comparative methods is still a very active area of research, luckily two active  There have been two fairly recent methods use to  There are two libraries that have this implementation, Phylocurve and Geomorph. 
+To do this we perform a multivariate version of Blombergs K. Currently there are two implementation of this method. 
+
 
 ####PhyloCurve Implementation
 
@@ -90,6 +96,9 @@ Black density plot is null distribution of K values from 1000 simulations of Bro
 ```{r Geomorph Multivarite BloombergsK }
 zzz<-physignal(avgScentCompounds,trimedTree)
 ```
+
+A quick note: 
+
 
 ## Test for Phylogenetic Signal
 In addition to the VOC compounds GCMS we had some really awsome EAG data. We used this to show that Bees exhibited a stronger response to species with insect pollination syndromes rather then species with wind pollination syndromes. We wanted to test phylogenetic signal in as well as made an ancestral reconstruction. 
@@ -114,7 +123,8 @@ EAGBloombergsK <- as.matrix(continuousResponse)
 multiPhylosignal(EAGBloombergsK, tree)
 ```
 
-####  Ancestrl State Reconstruction
+#### Ancestral State Reconstruction
+We reran an ancestral state reconstruciton on the smaller phylogeny
 ```{r EAGAncStateRecon }
 g <- contMap(trimedTree, continuousResponse, plot = TRUE, type="phylogram")
 ````
@@ -200,6 +210,3 @@ nodelabels( pie=res_simmap$ace,
 
 
 ```
-
-References
-Jones et al. 2015
