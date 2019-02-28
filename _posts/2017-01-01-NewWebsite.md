@@ -2,7 +2,7 @@
 layout: post
 title: "New Website on GitHub!"
 author: "Jesus"
-categories: Rambles
+categories: blog
 image: BB.jpg
 ---
 
