@@ -73,32 +73,24 @@ Data is formated, we can now calculate Blombergs K for each compound individuall
 yyy <- multiPhylosignal(avgScentCompounds, tree)
 yyy[,1, drop=FALSE]
 ```
-All compound have a K >1 indicating that closely related species are more similar than expected under brownian motion potentially due to other intresting process such as the evolution of pollination syndrome. 
+All compound have a K >1 indicating that closely related species are more similar than expected under brownian motion. This is an exciting finding as they could potentially be due to correlation with other trait such pollination syndrome. This corroborate our EAG data which shows that bees have a stronger electroanntenagram response to floral scent from insect pollinated plants rather then wind pollinated plants. 
 
-While each compound/ biochemical pathway is likelie to be under its own evolutionary pressure, we may also expect that the entire floral emission profile may have as a whole. 
+While it makes logical that individual volatile compounds are likely to be under their own evolutionary pressure, it may also be the case that the entire floral emission profile may be under pressure as a unit. We can imagine that many of these compounds share portions biochemical pathways and therefore covary. To address this we calculate a multivarite Blombergs K for the entire emission profiel. This test whether the entire floral boquet as a unit has less signal then expect under brownian motion. Currently there are two implementation of this method. 
 
-We can now calculate Blombergs K with the entire dataset as a whole. We test whether the entire floral boquet as a unit has less signal then expect under brownian motion. We ma sy expect that the entire floral 
-
-
-To do this we perform a multivariate version of Blombergs K. Currently there are two implementation of this method. 
-
-
-####PhyloCurve Implementation
 
 ```{r Multivarite BlombergsK}
+# PhyloCurve Implementation
 model <- evo.model(trimedTree, avgScentCompounds)  
 K.mult(model, nsim = 1000, plot = TRUE)
+
+#Geomorph Implimentation 
+zzz<-physignal(avgScentCompounds, trimedTree)
 ```
 Figure Interpretation:
 Black density plot is null distribution of K values from 1000 simulations of Brownian motion under a star phylogeny. Blue is a distribution of K values from 1000 simulations on the true phylogeny. Black dotted line is observe K value from multiveriate Bloomberg's K on observed data. This value falls well within the null distribution of simulation, indicating that there is no phylogenetic signal. 
 
-####Geomorph Implimentation 
-```{r Geomorph Multivarite BloombergsK }
-zzz<-physignal(avgScentCompounds,trimedTree)
-```
 
 A quick note: 
-
 
 ## Test for Phylogenetic Signal
 In addition to the VOC compounds GCMS we had some really awsome EAG data. We used this to show that Bees exhibited a stronger response to species with insect pollination syndromes rather then species with wind pollination syndromes. We wanted to test phylogenetic signal in as well as made an ancestral reconstruction. 
@@ -125,11 +117,11 @@ multiPhylosignal(EAGBloombergsK, tree)
 
 #### Ancestral State Reconstruction
 We reran an ancestral state reconstruciton on the smaller phylogeny
-```{r EAGAncStateRecon }
-g <- contMap(trimedTree, continuousResponse, plot = TRUE, type="phylogram")
-````
 
-```{r Significant }
+```{r ASR }
+
+g <- contMap(trimedTree, continuousResponse, plot = FALSE, type="phylogram")
+
 # Testing between ER and ARD
 results.anc <- data.frame( model=c("ER","ARD"),
                            lnL=numeric(2),
@@ -138,8 +130,10 @@ results.anc <- data.frame( model=c("ER","ARD"),
 
 ER_fit <- fitDiscrete(trimedTree, sigResponses, model="ER")
 results.anc[1,-1]<- c(lnL=ER_fit$opt$lnL,AICc=ER_fit$opt$aicc,ER_fit$opt$k)
+
 ARD_fit <- fitDiscrete(trimedTree, sigResponses, model="ARD")
 results.anc[2,-1]<- c(lnL=ARD_fit$opt$lnL,AICc=ARD_fit$opt$aicc,ARD_fit$opt$k)
+
 results.anc <- results.anc[order(results.anc$AICc),]
 results.anc
 
@@ -208,5 +202,12 @@ nodelabels( pie=res_simmap$ace,
 #plotSimmap(chartrees, cols, pts = FALSE, lwd = 3, fsize=0.6)
 #add.simmap.legend(colors = cols, vertical = FALSE, prompt = FALSE, x = 0, y = 1)
 
-
 ```
+
+## References
+
+Revell LJ.2012. _phytools: an R package for phylogenetic comparative biology (and other things)_. Methods in Ecology and Evolution 3.2: 217–223.
+
+Goolsby  EW.2016.  _Likelihood-based  parameter  estimation  for  high-dimen-sional  phylogenetic  comparative  models:  overcoming  the  limitations  of  ‘distance-based’ methods_. Systematic Biology 65: 852–870.
+
+Adams DC, Collyer ML, Kaliontzopoulou A.2018. _Geomorph: software for geometric morphometric analyses. R package version 3.0.6_
