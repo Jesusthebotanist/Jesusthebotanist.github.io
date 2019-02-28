@@ -8,8 +8,8 @@ google-ID: 'UA-112533483-1'
 menu:
 - {name: 'About', folder: 'pages', file: 'about.html'}
 - {name: 'Research', folder: 'pages', file: 'Research.html'}
-- {name: 'CV', folder: 'pages', file: 'cv.html'}
 - {name: 'Blog', folder: 'pages', file: 'Rambles.html'}
+- {name: 'CV', folder: 'pages', file: 'cv.html'}
 #- {name: 'Other Cool Scientists', folder: 'pages', file: 'friends.html'}
 #- {name: 'Contact', folder: 'pages', file: 'contact.html'}
 

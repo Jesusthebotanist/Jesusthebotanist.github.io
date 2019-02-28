@@ -2,7 +2,7 @@
 layout: post
 title: "Undergraduate Research: What Makes Flowers Colorful?"
 author: "Jesus"
-categories: Rambles
+categories: research
 image: AP3s.jpg
 ---
 
