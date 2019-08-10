@@ -3,7 +3,8 @@ layout: cv2
 title: Education
 ---
 <p align="center">
-This CV was written in Latex compiled in [Overleaf](https://www.overleaf.com). You can download the .tex file from my github [here](https://jesusthebotanist.github.io/assets/code/cv.tex)
+This CV was written in Latex compiled in <a href="https://www.overleaf.com">Overleaf</a>. You can download the .tex file from my 
+<a href="https://jesusthebotanist.github.io/assets/code/cv.tex">github</a> 
 
 <p align="center">
 <object data="https://jesusthebotanist.github.io/assets/pdfs/CV_Jan2018.pdf" type="application/pdf" width="700px" height="700px">
