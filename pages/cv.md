@@ -7,7 +7,7 @@ This CV was written in Latex compiled in <a href="https://www.overleaf.com">Over
 <a href="https://jesusthebotanist.github.io/assets/code/cv.tex">github</a> 
 
 <p align="center">
-<object data="https://jesusthebotanist.github.io/assets/pdfs/CV_Jan2018.pdf" type="application/pdf" width="700px" height="700px">
+<object data="https://jesusthebotanist.github.io/assets/pdfs/CV_Aug2019.pdf" type="application/pdf" width="700px" height="700px">
     <embed src="https://drive.google.com/viewerng/viewer?embedded=true&url=https://jesusthebotanist.github.io/assets/pdfs/CV_Aug2019.pdf">
         <p> Download a pdf Here: <a href="https://jesusthebotanist.github.io/assets/pdfs/CV_Aug2019.pdf">Download CV</a>.</p>
 </object>
