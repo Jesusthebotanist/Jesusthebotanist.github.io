@@ -3,6 +3,7 @@ layout: post
 title: "Linux, Alignment and Parsimony"
 author: "Jesus"
 date: November 10,2018
+layout: post
 categories: research
 image: PL6401.png
 ---
