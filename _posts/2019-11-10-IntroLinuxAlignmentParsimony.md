@@ -13,7 +13,7 @@ The worksheet is a very brief and coverse basic linux, alignment with mafft and 
 
 
 <p align="center">
-<object data="https://jesusthebotanist.github.io/assets/pdfs/Day1_Worksheet_LinuxAlignmentParsimony.pdf" type="application/pdf" width="700px" height="700px">
+<object data="https://jesusthebotanist.github.io/assets/pdfs/Day1_Worksheet_LinuxAlignmentParsimony.pdf" type="application/pdf">
     <embed src="https://drive.google.com/viewerng/viewer?embedded=true&url=https://jesusthebotanist.github.io/assets/pdfs/Day1_Worksheet_LinuxAlignmentParsimony.pdf">
         <p> Download a pdf Here: <a href="https://jesusthebotanist.github.io/assets/pdfs/Day1_Worksheet_LinuxAlignmentParsimony.pdf.pdf">Download CV</a>.</p>
 </object>
