@@ -11,5 +11,8 @@ I am a third year graduate student in [Chelsea Specht's lab](http://blogs.cornel
 Photo credit:  [Mick Song](https://michaelsongagradstudent.github.io/)  
 
 
-![alt text](/assets/img/Caterpiller1.jpg "Yummmmy!")
+![alt text](/assets/img/Caterpiller1.jpg "Caterpiller!")
+
+![alt text](/assets/img/Caterpiller1.jpg "Youthful Jesus!")
+
 
