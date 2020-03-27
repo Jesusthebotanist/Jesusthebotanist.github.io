@@ -9,3 +9,7 @@ I am a third year graduate student in [Chelsea Specht's lab](http://blogs.cornel
 </p> 
 ![alt text](/assets/img/donut.jpg "Yummmmy!")
 Photo credit:  [Mick Song](https://michaelsongagradstudent.github.io/)  
+
+
+![alt text](/assets/img/Caterpiller1.jpg "Yummmmy!")
+
