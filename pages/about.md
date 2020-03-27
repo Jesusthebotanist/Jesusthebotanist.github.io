@@ -13,6 +13,6 @@ Photo credit:  [Mick Song](https://michaelsongagradstudent.github.io/)
 
 ![alt text](/assets/img/Caterpiller1.jpg "Caterpiller!")
 
-![alt text](/assets/img/Caterpiller1.jpg "Youthful Jesus!")
+![alt text](/assets/img/Caterpiller2.jpg "Youthful Jesus!")
 
 
