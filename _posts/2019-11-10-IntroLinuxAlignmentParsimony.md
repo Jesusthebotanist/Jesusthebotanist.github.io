@@ -4,7 +4,7 @@ title: "Linux, Alignment and Parsimony"
 author: "Jesus"
 date: November 10,2018
 layout: post
-categories: research
+categories: blog
 image: PL6401.png
 ---
 I wrote the following worksheet for the Cornell PL6401 Ecology and Evolution module. This is a lab course for first year Plant Biology graduate students that introduces students to diverse topics that they will encounter in Plant biology. [Eugenio Valderrama](http://blogs.cornell.edu/specht/eugenio-valderrama/), [Jacob Landis](http://blogs.cornell.edu/specht/jacob-landis/) and myself led the Ecology and Evolution module. 
