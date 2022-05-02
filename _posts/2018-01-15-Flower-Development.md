@@ -2,7 +2,7 @@
 layout: post
 title: "Undergraduate Research: What Makes Flowers Colorful?"
 author: "Jesus"
-categories: research
+categories: blog
 image: AP3s.jpg
 ---
 
