@@ -6,8 +6,9 @@ title: Blog
 <h2>Two Equal Columns</h2>
 
 <div class="row">
-    <div class="featured-posts" {% if post.image %}style="background-image:url({{ site.github.url }}/assets/img/{{ post.image }})"{% endif %}>
+  <div class="column" style="background-color:#aaa;">
     <h2>Column 1</h2>
+     <a href="{{ site.github.url }}{{ post.url }}">
     <p>Some text..</p>
   </div>
   <div class="column" style="background-color:#bbb;">
