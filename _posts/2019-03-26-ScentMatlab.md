@@ -3,7 +3,7 @@ title: "Thalictrum Scent Part 1"
 author: Jesus Martinez-Gomez
 date: february 25, 2019
 layout: post
-categories: research
+categories: blog
 image: nmds.png
 ---
 During my undergrad I had the fantastic oppertunity to help a fellow undergrad in the lab, Theresa Wang, with her thesis project. Her thesis was a collaberative project between Veronica Di Stilio and Jeff Riffel's lab to investigated the floral scent profiles between insect and wind pollinated species of *Thalictrum*. The paper was published last in [Annuals of Botany](https://academic.oup.com/aob/article/123/2/289/5056502) (Email me if you're stuck behind paywall). I joined the group while I was taking [BIOL 419: Data Science for Biologist](https://docs.wixstatic.com/ugd/b83b01_bb7ba7ff3216490eab0c86c628431108.pdf) my first every computing class; I need a project for the course and Theresa had some data just for that! The entire experiance really pushed me to learn skill that I am now utalizing in my Ph.D, as well as a nice change of pace from all the PCR I was running. 
