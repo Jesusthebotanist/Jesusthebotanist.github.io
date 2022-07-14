@@ -2,3 +2,5 @@
 layout: home
 title: Home
 ---
+{% assign about = site.pages | where: 'pages','research.html' %}
+{{about}}
