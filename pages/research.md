@@ -3,10 +3,8 @@ layout: misc
 title: Research
 ---
 
-# Plant Morphogensis
+## Plant Morphogensis
 
-# Computational Methods in Evolutionary Biology 
+## Computational Methods in Evolutionary Biology 
 
-# Botanical Diversity
-
-# Evolution of Novelty
+## Evolution of Novelty
