@@ -4,7 +4,7 @@ title: Research
 ---
 
 
-<img src="/assets/img/ThresholdModel.jpg">
+<img src="/assets/img/ThresholdModel.jpg" width="600" height="500">
 
 <h1 style="text-align: center;">Plant Morphology, Statistical Phylogenetics and  Evo-Devo </h1>
 
