@@ -4,7 +4,7 @@ title: "Choose Development! Summer Research"
 author: "Jesus"
 date: Aug 5, 2014
 categories: media
-image: UWVideoLink.png
+image: SDB_logo.png
 ---
 
 The University of Washington made a video about me and my research, check it down below.
