@@ -7,9 +7,10 @@ google-ID: 'UA-112533483-1'
 
 menu:
 - {name: 'About', folder: 'pages', file: 'about.html'}
-- {name: 'Research', folder: 'pages', file: 'research.html'}
+- {name: 'Research', folder: 'pages', file: 'research.md'}
 - {name: 'Blog', folder: 'pages', file: 'blog.html'}
 - {name: 'CV', folder: 'pages', file: 'cv.html'}
+- {name: 'Media', folder: 'pages', file: 'media.md'}
 #- {name: 'Other Cool Scientists', folder: 'pages', file: 'friends.html'}
 #- {name: 'Contact', folder: 'pages', file: 'contact.html'}
 
