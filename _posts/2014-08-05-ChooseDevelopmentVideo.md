@@ -7,7 +7,7 @@ categories: media
 image: SDB_logo.png
 ---
 
-The University of Washington made a video about me and my research, check it down below.
+A video summary of my researcher as part of the [Choose Development!](https://www.sdbonline.org/choose_development) summer program in 2014
 
-<iframe width="600" height="315" src="https://www.youtube.com/embed/eRAfphm7Eac" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+<iframe width="600" height="315" src="https://www.youtube.com/watch?v=bNLGqOdOOpg&t=134s&ab_channel=SocietyforDevelopmentalBiology" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 </iframe>
