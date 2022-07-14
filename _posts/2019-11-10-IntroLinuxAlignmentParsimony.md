@@ -2,7 +2,7 @@
 layout: post
 title: "Linux, Alignment and Parsimony"
 author: "Jesus"
-date: November 10,2018
+date: November 10,2019
 layout: post
 categories: blog
 image: PL6401.png
