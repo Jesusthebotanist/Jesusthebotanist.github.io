@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Media
+title: media
 ---
 {% for post in site.categories.blog %}
 
