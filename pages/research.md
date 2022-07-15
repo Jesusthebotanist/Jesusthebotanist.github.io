@@ -43,7 +43,7 @@ Function in the paleoAP3 Lineage of Floral Organ Identity Genes. Frontiers in Pl
 <h2 style="text-align: center;">
   <ins>
   Evolution - Phylogenetic Statistical Methods 
-  <ins>
+  </ins>
 </h2>
 <img src="/assets/img/HiddenCTMM.png">
 
@@ -62,7 +62,7 @@ banization tolerance in Anolis.” Evolution (2020).](https://onlinelibrary.wile
 <h2 style="text-align: center;">
   <ins>
     Collaboration - From Ontologies to Floral Scent 
-  <ins>
+  </ins>
 </h2>
 While my own personal academic intrests drive my research program it is hard to not be captivatied by science of my peers. To the extent that I have published with fellow graduates in fields tangential to my expertise. These have been fruitful endevors and I am always looking for new avenues of investigation! For some examples of my collaborative work see,
 
@@ -83,7 +83,7 @@ pollination traits. Annals of Botany 123.2 (2019): 289-301.](https://academic.ou
 <h2 style="text-align: center;">
   <ins>
    Funding and Support
-  <ins>
+  </ins>
 </h2>
 I have been lucky to have been supported by a number agenies throughout my academic career. They have allowed me to purse my education and research and I have them to thank for output. For a complete list see my [CV](https://jesusthebotanist.github.io/pages/cv.html)
 
