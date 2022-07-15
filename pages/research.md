@@ -9,8 +9,10 @@ title: Research
 <h1 style="text-align: center;">Plant Morphology, Statistical Phylogenetics and  Evo-Devo </h1>
 
 I am captivated by origin stories in biology. Both across evolutionary time and across organismal time. The past has a unique way of contextualizing the present and providing insight into the future. My research focuses on characterizing the processes that have produces the vast organismal diversity that exists. My approaches primarily fall into the field of Evolution and Developmental Biology, specifically the subdisciplines of phylogenetic comparative methods and plant morphology. 
-
-
+<br>
+<br>
+<br>
+<br>
 <h2 style="text-align: center;">Development- Plant Morphology </h2>
 <img src="/assets/img/EpiIllumination.png">
 
@@ -27,6 +29,10 @@ ment 23.3 (2021): 197-214.](https://onlinelibrary.wiley.com/doi/abs/10.1111/ede.
 * [Galimba, K. D., Martínez-Gómez, J., & Di Stilio, V. S. Gene Duplication and Transference of
 Function in the paleoAP3 Lineage of Floral Organ Identity Genes. Frontiers in Plant Science 9 (2018):
 334.](https://www.frontiersin.org/articles/10.3389/fpls.2018.00334/full)
+<br>
+<br>
+<br>
+<br>
 
 <h2 style="text-align: center;">Evolution - Phylogenetic Statistical Methods </h2>
 <img src="/assets/img/HiddenCTMM.png">
@@ -38,9 +44,12 @@ genetics in trait evolution with the Threshold Model: The Umbel-ivable Amaryllis
 study. *in prep*](https://jesusthebotanist.github.io/media/Evolution2019.html)
 * [Martínez-Gómez, J. Digest: Phylogenetic comparative methods identify traits associated with ur-
 banization tolerance in Anolis.” Evolution (2020).](https://onlinelibrary.wiley.com/doi/full/10.1111/evo.14002)
+<br>
+<br>
+<br>
+<br>
 
-
-## Collaboration - From Ontologies to Floral Scent
+<h2 style="text-align: center;">Collaboration - From Ontologies to Floral Scent </h2>
 While my own personal academic intrests drive my research program it is hard to not be captivatied by science of my peers. To the extent that I have published with fellow graduates in fields tangential to my expertise. These have been fruitful endevors and I am always looking for new avenues of investigation! For some examples of my collaborative work see,
 
 * [Harline, K., Martínez-Gómez, J., Specht, C.D., Roeder, A. H.K. A life cycle for modeling biology
