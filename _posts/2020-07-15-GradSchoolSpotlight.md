@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Plant have Families too!"
+title: "Cornell Graduate Student Spotlight"
 author: "Jesus"
 date: July 15, 2020
 categories: media
