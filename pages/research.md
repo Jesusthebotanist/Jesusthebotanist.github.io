@@ -42,7 +42,11 @@ Function in the paleoAP3 Lineage of Floral Organ Identity Genes. Frontiers in Pl
 <br>
 <br>
 
-<h2 style="text-align: center;">Evolution - Phylogenetic Statistical Methods </h2>
+<h2 style="text-align: center;">
+  <ins>
+  Evolution - Phylogenetic Statistical Methods 
+  <ins>
+</h2>
 <img src="/assets/img/HiddenCTMM.png">
 
 Another piller of my work is understanding how developmental and mature traits have evolved. Key to this is making accurate and realistic inference of what organisms looked like in the pass. To this end I have focused on developing statistical phylogenetic methods that integrate our knowledge of plant morphology. I am also generally intrested in how biologist interrpret models of evolutionary biology. For research related to this see, 
@@ -57,7 +61,11 @@ banization tolerance in Anolis.” Evolution (2020).](https://onlinelibrary.wile
 <br>
 <br>
 
-<h2 style="text-align: center;">Collaboration - From Ontologies to Floral Scent </h2>
+<h2 style="text-align: center;">
+  <ins>
+    Collaboration - From Ontologies to Floral Scent 
+  <ins>
+</h2>
 While my own personal academic intrests drive my research program it is hard to not be captivatied by science of my peers. To the extent that I have published with fellow graduates in fields tangential to my expertise. These have been fruitful endevors and I am always looking for new avenues of investigation! For some examples of my collaborative work see,
 
 * [Harline, K., Martínez-Gómez, J., Specht, C.D., Roeder, A. H.K. A life cycle for modeling biology
@@ -70,7 +78,11 @@ American Journal of Botany 108.3 (2021): 372-387.](https://bsapubs.onlinelibrary
 S. Scent matters: differential contribution of scent to insect response in flowers with insect vs. wind
 pollination traits. Annals of Botany 123.2 (2019): 289-301.](https://academic.oup.com/aob/article/123/2/289/5056502?login=true)
 
-## Funding
+<h2 style="text-align: center;">
+  <ins>
+   Funding and Support
+  <ins>
+</h2>
 I have been lucky to have been supported by a number agenies throughout my academic career. They have allowed me to purse my education and research and I have them to thank for output. For a complete list see my [CV](https://jesusthebotanist.github.io/pages/cv.html)
 
 <img src="/assets/img/Funding.png">
