@@ -19,3 +19,9 @@ I am captivated by origin stories in biology. Both across evolutionary time and 
 
 ## Evolution - Phylogenetic Statistical Methods
 <img src="/assets/img/HiddenCTMM.png">
+
+
+## Funding
+I have been lucky to have been supported by a number agenies throughout my academic career. They have allowed me to purse my education and research and I have them to thank for output. For a complete list see my [CV](https://jesusthebotanist.github.io/pages/cv.html)
+
+<img src="/assets/img/Funding.png">
